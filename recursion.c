@@ -8,8 +8,7 @@
 
 void towers(int, char, char, char);
 
-int main()
-{
+int main() {
     int num;
 
     printf("Enter the number of disks : ");
@@ -18,11 +17,10 @@ int main()
     towers(num, 'A', 'C', 'B');
     system("pause");
 }
-void towers(int num, char A, char C, char B)
-{
-    printf("\n %d,%c,%c,%c\n",num,A,C,B);
-    if (num == 1)
-    {
+
+void towers(int num, char A, char C, char B) {
+    printf("\n %d,%c,%c,%c\n", num, A, C, B);
+    if (num == 1) {
         printf("\n 1. Move disk 1 from  %c to  %c", A, C);
         return;
     }
